@@ -1,0 +1,19 @@
+{
+  "name": "react-native-touch-filler",
+  "version": "0.0.0",
+  "description": "A React-Native component that makes a view Pressable",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarThinks/react-native-touch-filler.git"
+  },
+  "author": "OmarThinks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OmarThinks/react-native-touch-filler/issues"
+  },
+  "homepage": "https://github.com/OmarThinks/react-native-touch-filler#readme"
+}
