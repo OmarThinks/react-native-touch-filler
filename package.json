@@ -1,6 +1,7 @@
 {
   "name": "react-native-touch-filler",
   "version": "0.0.0",
+  "private": false,
   "description": "A React-Native component that makes a view Pressable",
   "main": "index.tsx",
   "scripts": {

@@ -30,7 +30,7 @@ const TouchFiller = memo(
       return StyleSheet.flatten([styles.pressable, style]);
     }, [style]);
 
-    return <Pressable {...props} onPress={onPress} style={[_style, style]} />;
+    return <Pressable {...props} onPress={onPress} style={_style} />;
   }
 );
 
