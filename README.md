@@ -59,8 +59,13 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 # Examples GIFs:
 
 ![gif1](./media/videos/1.gif)
+
 ![gif1](./media/videos/2.gif)
+
 ![gif1](./media/videos/3.gif)
+
 ![gif1](./media/videos/4.gif)
+
 ![gif1](./media/videos/5.gif)
+
 ![gif1](./media/videos/6.gif)
