@@ -1,10 +1,8 @@
+import React, { memo, useMemo } from "react";
+import type { StyleProp, ViewStyle } from "react-native";
 import { Pressable, StyleSheet } from "react-native";
-import { memo, useMemo } from "react";
-import type { GestureResponderEvent, StyleProp, ViewStyle } from "react-native";
-import React from "react";
-const emptyFunction = () => {
-  console.log("Pressed");
-};
+
+const emptyFunction = () => {};
 
 type TouchFillerProps = React.ComponentProps<typeof Pressable> & {
   onPress?:
@@ -13,6 +11,7 @@ type TouchFillerProps = React.ComponentProps<typeof Pressable> & {
     | React.ComponentProps<typeof Pressable>["onPress"];
   borderRadius?: number;
   style?: StyleProp<ViewStyle>;
+  rippleColor?: string;
 };
 
 const TouchFiller = memo(
@@ -20,17 +19,32 @@ const TouchFiller = memo(
     style,
     onPress = emptyFunction,
     borderRadius,
+    rippleColor = "silver",
+    android_ripple,
     ...props
   }: TouchFillerProps) => {
+    const _style: StyleProp<ViewStyle> = useMemo(() => {
+      return StyleSheet.flatten([styles.pressable, { borderRadius }, style]);
+    }, [style, borderRadius]);
+
+    const rippleColorObject: React.ComponentProps<
+      typeof Pressable
+    >["android_ripple"] = useMemo(() => {
+      return { color: rippleColor, ...android_ripple };
+    }, [rippleColor, android_ripple]);
+
     if (onPress === null) {
       return null;
     }
 
-    const _style: StyleProp<ViewStyle> = useMemo(() => {
-      return StyleSheet.flatten([styles.pressable, style]);
-    }, [style]);
-
-    return <Pressable {...props} onPress={onPress} style={_style} />;
+    return (
+      <Pressable
+        {...props}
+        onPress={onPress}
+        style={_style}
+        android_ripple={rippleColorObject}
+      />
+    );
   }
 );
 
