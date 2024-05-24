@@ -9,40 +9,48 @@ type TouchFillerProps = React.ComponentProps<typeof Pressable> & {
     | null
     | undefined
     | React.ComponentProps<typeof Pressable>["onPress"];
-  borderRadius?: number;
   style?: StyleProp<ViewStyle>;
-  rippleColor?: string;
+  color?: string;
+  borderless?: boolean;
+  withoutRipple?: boolean;
 };
 
 const TouchFiller = memo(
   ({
     style,
     onPress = emptyFunction,
-    borderRadius,
-    rippleColor = "silver",
+    color = "grey",
     android_ripple,
+    borderless = true,
+    withoutRipple,
     ...props
   }: TouchFillerProps) => {
     const _style: StyleProp<ViewStyle> = useMemo(() => {
-      return StyleSheet.flatten([styles.pressable, { borderRadius }, style]);
-    }, [style, borderRadius]);
+      return StyleSheet.flatten([styles.pressable, style]);
+    }, [style]);
 
     const rippleColorObject: React.ComponentProps<
       typeof Pressable
     >["android_ripple"] = useMemo(() => {
-      return { color: rippleColor, ...android_ripple };
-    }, [rippleColor, android_ripple]);
+      return {
+        color: withoutRipple ? "transparent" : color,
+        borderless,
+        ...android_ripple,
+      };
+    }, [color, android_ripple]);
 
     if (onPress === null) {
       return null;
     }
+
+    const _android_ripple = withoutRipple ? undefined : rippleColorObject;
 
     return (
       <Pressable
         {...props}
         onPress={onPress}
         style={_style}
-        android_ripple={rippleColorObject}
+        android_ripple={_android_ripple}
       />
     );
   }
