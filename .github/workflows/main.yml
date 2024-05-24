@@ -1,0 +1,45 @@
+name: Publish to npm
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    if: "!github.event.release.prerelease"
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+      - run: npm --no-git-tag-version version ${{ github.event.release.tag_name }}
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+#on:
+#  push:
+#    branches:
+#      - master
+#jobs:
+#  publish:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v3
+#
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: 20
+#          registry-url: https://registry.npmjs.org/
+#
+#      - name: Install dependencies
+#        run: npm install
+#
+#      - name: Publish to npm
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+#        run: npm publish --tag $(echo ${GITHUB_REF#refs/tags/})
