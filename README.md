@@ -106,7 +106,7 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 
 -->
 
-![<img src="./media/videos/6.gif" width="330" height="290"/>](./media/videos/1.gif)
+![<img src="./media/videos/6.gif" width="330" height="290"/>](./media/videos/1.gif){width: 330px; height: 230px; background-position:center; object-fit: cover; object-position: center 7%;}
 
 ![gif1](./media/videos/2.gif)
 
