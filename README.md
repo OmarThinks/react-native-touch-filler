@@ -76,8 +76,6 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 
 # Todos:
 
-- Adding keywords
-- Remove ref, It's usafe
 - Document props
 - Examples should contain conent
 - make code bold and install text bold

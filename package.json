@@ -26,5 +26,30 @@
   "devDependencies": {
     "@types/react": ">=16.8.0",
     "typescript": ">=4.0.0"
-  }
+  },
+  "keywords": [
+    "react-native-touch-filler",
+    "react native touch filler",
+    "react-native-touch",
+    "react native touch",
+    "react native",
+    "react-native",
+    "filler",
+    "react native filler",
+    "react-native-filler",
+    "touch",
+    "gesture",
+    "fill",
+    "touchable",
+    "user interaction",
+    "UI",
+    "component",
+    "mobile development",
+    "react",
+    "event handling",
+    "custom touch",
+    "input",
+    "touch events",
+    "touch feedback"
+  ]
 }
