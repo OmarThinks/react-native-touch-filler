@@ -76,7 +76,33 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 
 </b>
 
-# Examples GIFs:
+# 4) Examples GIFs:
+
+<img 
+    style="width: 330px; height: 230px; background-position:center; object-fit: cover; object-position: center 7%;" 
+    src="./media/videos/1.gif">
+
+<img 
+    style="width: 330px; height: 230px; background-position:center; object-fit: cover; object-position: center 20%;" 
+    src="./media/videos/2.gif">
+
+<img 
+    style="width: 330px; height: 230px; background-position:center; object-fit: cover; object-position: center 10%;" 
+    src="./media/videos/3.gif">
+
+<img 
+    style="width: 330px; height: 230px; background-position:center; object-fit: cover; object-position: center 16%;" 
+    src="./media/videos/4.gif">
+
+<img 
+    style="width: 330px; height: 230px; background-position:center; object-fit: cover; object-position: center 17%;" 
+    src="./media/videos/5.gif">
+
+<img 
+    style="width: 330px; height: 290px; background-position:center; object-fit: cover; object-position: center 78%;" 
+    src="./media/videos/6.gif">
+
+<!--
 
 ![gif1](./media/videos/1.gif)
 
@@ -89,6 +115,8 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 ![gif1](./media/videos/5.gif)
 
 ![gif1](./media/videos/6.gif)
+
+-->
 
 # Todos:
 
