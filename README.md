@@ -4,13 +4,19 @@ A React-Native component that makes a view touchable
 
 # How to use:
 
+<b>
+
 ```bash
 npm i react-native-touch-filler
 ```
 
+</b>
+
 # Examples:
 
 ## 1) Basic Example:
+
+<b>
 
 ```tsx
 import React from "react";
@@ -35,9 +41,13 @@ const App = () => {
 export default App;
 ```
 
+</b>
+
 ## 2) Full Examples:
 
 Full Example code: https://github.com/OmarThinks/react-native-touch-filler/blob/master/src/ExamplesTouchFiller.tsx
+
+<b>
 
 ```tsx
 import { ExamplesTouchFiller } from "react-native-touch-filler";
@@ -53,12 +63,18 @@ const App = () => {
 export default App;
 ```
 
+</b>
+
 ### 3) Full Exports
+
+<b>
 
 ```tsx
 import TouchFiller, { ExamplesTouchFiller } from "react-native-touch-filler";
 import type { TouchFillerProps } from "react-native-touch-filler";
 ```
+
+</b>
 
 # Examples GIFs:
 
@@ -78,7 +94,6 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 
 - Document props
 - Examples should contain conent
-- make code bold and install text bold
 - Add how to use
 - Add table of contents
 - Add Why I haven't added a `ref`
