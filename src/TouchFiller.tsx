@@ -46,7 +46,7 @@ const TouchFiller = memo(
       }, [color, android_ripple]);
 
       if (onPress === null) {
-        return null;
+        return <Pressable style={styles.hiddenPressable} />;
       }
 
       const _android_ripple = withoutRipple ? undefined : rippleColorObject;
@@ -70,6 +70,12 @@ const styles = StyleSheet.create({
     height: "100%",
     position: "absolute",
     overflow: "hidden",
+  },
+  hiddenPressable: {
+    position: "absolute",
+    width: 0,
+    height: 0,
+    display: "none",
   },
 });
 

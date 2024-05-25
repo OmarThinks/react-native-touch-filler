@@ -43,7 +43,11 @@ Full Example code: https://github.com/OmarThinks/react-native-touch-filler/blob/
 import { ExamplesTouchFiller } from "react-native-touch-filler";
 
 const App = () => {
-  return <ExamplesTouchFiller />;
+  return (
+    <ExamplesTouchFiller
+    // Full Example code: https://github.com/OmarThinks/react-native-touch-filler/blob/master/src/ExamplesTouchFiller.tsx
+    />
+  );
 };
 
 export default App;
@@ -69,3 +73,15 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 ![gif1](./media/videos/5.gif)
 
 ![gif1](./media/videos/6.gif)
+
+# Todos:
+
+- Adding keywords
+- Remove ref, It's usafe
+- Document props
+- Examples should contain conent
+- make code bold and install text bold
+- Add how to use
+- Add table of contents
+- Add Why I haven't added a `ref`
+- Contributing
