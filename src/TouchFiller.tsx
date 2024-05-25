@@ -15,22 +15,21 @@ type TouchFillerProps = React.ComponentProps<typeof Pressable> & {
   withoutRipple?: boolean;
 };
 
-type TouchFillerRef = React.LegacyRef<View>;
+//type TouchFillerRef = React.LegacyRef<View>;
 
 const TouchFiller = memo(
-  forwardRef(
-    (
-      {
-        style,
-        onPress = emptyFunction,
-        color = "grey",
-        android_ripple,
-        borderless = true,
-        withoutRipple,
-        ...props
-      }: TouchFillerProps,
-      ref?: TouchFillerRef
-    ) => {
+  //forwardRef(
+  ({
+    style,
+    onPress = emptyFunction,
+    color = "grey",
+    android_ripple,
+    borderless = true,
+    withoutRipple,
+    ...props
+  }: TouchFillerProps) =>
+    //ref?: TouchFillerRef
+    {
       const _style: StyleProp<ViewStyle> = useMemo(() => {
         return StyleSheet.flatten([styles.pressable, style]);
       }, [style]);
@@ -57,11 +56,11 @@ const TouchFiller = memo(
           onPress={onPress}
           style={_style}
           android_ripple={_android_ripple}
-          ref={ref}
+          //ref={ref}
         />
       );
     }
-  )
+  //)
 );
 
 const styles = StyleSheet.create({
@@ -79,5 +78,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export type { TouchFillerProps, TouchFillerRef };
+export type { TouchFillerProps };
 export default TouchFiller;
