@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
-import TouchFiller from "./TouchFiller";
+import TouchFiller from "react-native-touch-filler";
 
 const onPress = () => console.log("Pressed");
 
@@ -142,6 +142,19 @@ const ExamplesTouchFiller = () => {
             }}
           >
             <TouchFiller onPress={onPress} />
+          </View>
+        </ContentWithTitle>
+
+        {/*7) Not Pressable*/}
+        <ContentWithTitle title="7) Not Pressable ✅">
+          <View
+            style={{
+              alignSelf: "stretch",
+              height: 200,
+              backgroundColor: "lime",
+            }}
+          >
+            <TouchFiller onPress={null} />
           </View>
         </ContentWithTitle>
       </View>

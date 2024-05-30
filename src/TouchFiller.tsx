@@ -25,7 +25,7 @@ const TouchFiller = memo(
     color = "grey",
     android_ripple,
     borderless = true,
-    withoutRipple,
+    withoutRipple = false,
     ...props
   }: TouchFillerProps) =>
     //ref?: TouchFillerRef
@@ -44,18 +44,14 @@ const TouchFiller = memo(
         };
       }, [color, android_ripple]);
 
-      if (onPress === null) {
-        return <Pressable style={styles.hiddenPressable} />;
-      }
-
       const _android_ripple = withoutRipple ? undefined : rippleColorObject;
 
       return (
         <Pressable
           {...props}
-          onPress={onPress}
+          onPress={onPress === null ? undefined : onPress}
           style={_style}
-          android_ripple={_android_ripple}
+          android_ripple={onPress === null ? undefined : _android_ripple}
           //ref={ref}
         />
       );
