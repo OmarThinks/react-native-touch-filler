@@ -10,6 +10,45 @@ npm i react-native-touch-filler
 
 </b>
 
+# Links:
+
+<table>
+
+<tr>
+  <th>Platfform</th>
+  <th>Link</th>
+</tr>
+
+<tr>
+  <th>npm</th>
+  <th>
+  
+  https://www.npmjs.com/package/react-native-touch-filler
+  
+  </th>
+</tr>
+
+<tr>
+  <th>GitHub</th>
+  <th>
+
+https://github.com/OmarThinks/react-native-touch-filler
+
+  </th>
+</tr>
+
+<tr>
+  <th>YouTube</th>
+  <th>
+  
+  
+  https://www.youtube.com/watch?v=hmNTLzLNAwk
+  
+  </th>
+</tr>
+
+</table>
+
 # Basic Example:
 
 <b>
