@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
-import TouchFiller from "react-native-touch-filler";
+import TouchFiller from "./TouchFiller";
 
 const onPress = () => console.log("Pressed");
 
