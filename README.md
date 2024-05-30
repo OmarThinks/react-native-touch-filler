@@ -159,7 +159,7 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 <tr>
   <td>
   
-  `onPress`
+  <code>onPress</code>
   
   </td>
   <td>Optional</td>
@@ -185,7 +185,20 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 <tr>
-  <td>style</td>
+  <td> <code>zIndex</code></td>
+  <td>Optional</td>
+  <td>number</td>
+  <td>
+  
+    
+    `zIndex` of the TouchFiller
+
+  </td>
+  <th><code>1</code></th>
+</tr>
+
+<tr>
+  <td> <code>style</code></td>
   <td>Optional</td>
   <td>
   
@@ -197,7 +210,7 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 <tr>
-  <td>color</td>
+  <td> <code>color</code></td>
   <td>Optional</td>
   <td>string</td>
   <td>Color of the ripple (Android)</td>
@@ -205,7 +218,7 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 <tr>
-  <td>borderless</td>
+  <td> <code>borderless</code></td>
   <td>Optional</td>
   <td>boolean</td>
   <td>
@@ -218,7 +231,7 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 <tr>
-  <td>withoutRipple</td>
+  <td> <code>withoutRipple</code></td>
   <td>Optional</td>
   <td>boolean</td>
   <td>

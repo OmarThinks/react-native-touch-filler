@@ -9,6 +9,7 @@ type TouchFillerProps = React.ComponentProps<typeof Pressable> & {
     | null
     | undefined
     | React.ComponentProps<typeof Pressable>["onPress"];
+  zIndex?: number;
   style?: StyleProp<ViewStyle>;
   color?: string;
   borderless?: boolean;
@@ -22,6 +23,7 @@ const TouchFiller = memo(
   ({
     style,
     onPress = emptyFunction,
+    zIndex = 1,
     color = "grey",
     android_ripple,
     borderless = true,
@@ -31,7 +33,7 @@ const TouchFiller = memo(
     //ref?: TouchFillerRef
     {
       const _style: StyleProp<ViewStyle> = useMemo(() => {
-        return StyleSheet.flatten([styles.pressable, style]);
+        return StyleSheet.flatten([{ zIndex }, styles.pressable, style]);
       }, [style]);
 
       const rippleColorObject: React.ComponentProps<
