@@ -12,42 +12,9 @@ npm i react-native-touch-filler
 
 # Links:
 
-<table>
-
-<tr>
-  <th>Platfform</th>
-  <th>Link</th>
-</tr>
-
-<tr>
-  <th>npm</th>
-  <th>
-  
-  https://www.npmjs.com/package/react-native-touch-filler
-  
-  </th>
-</tr>
-
-<tr>
-  <th>GitHub</th>
-  <th>
-
-https://github.com/OmarThinks/react-native-touch-filler
-
-  </th>
-</tr>
-
-<tr>
-  <th>YouTube</th>
-  <th>
-  
-  
-  https://www.youtube.com/watch?v=hmNTLzLNAwk
-  
-  </th>
-</tr>
-
-</table>
+- npm: [Package](https://www.npmjs.com/package/react-native-touch-filler) [<img src="./media/images/Npm-logo.svg" height="15"/>](https://www.npmjs.com/package/react-native-touch-filler)
+- GitHub: [Repo](https://github.com/OmarThinks/react-native-touch-filler) [<img src="./media/images/GitHub_Invertocat_Logo.svg" height="15"/>](https://github.com/OmarThinks/react-native-touch-filler)
+- YouTube: [Video](https://www.youtube.com/watch?v=hmNTLzLNAwk) [<img src="./media/images/YouTube_icon.svg" height="15"/>](https://www.youtube.com/watch?v=hmNTLzLNAwk)
 
 # Basic Example:
 
