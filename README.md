@@ -12,9 +12,11 @@ npm i react-native-touch-filler
 
 # Links:
 
-- npm: [Package](https://www.npmjs.com/package/react-native-touch-filler) [<img src="./media/images/Npm-logo.svg" height="15"/>](https://www.npmjs.com/package/react-native-touch-filler)
-- GitHub: [Repo](https://github.com/OmarThinks/react-native-touch-filler) [<img src="./media/images/GitHub_Invertocat_Logo.svg" height="15"/>](https://github.com/OmarThinks/react-native-touch-filler)
-- YouTube: [Video](https://www.youtube.com/watch?v=hmNTLzLNAwk) [<img src="./media/images/YouTube_icon.svg" height="15"/>](https://www.youtube.com/watch?v=hmNTLzLNAwk)
+https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/1.gif?raw=true
+
+- npm: [Package](https://www.npmjs.com/package/react-native-touch-filler) [<img src="https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/images/Npm-logo.svg?raw=true" height="15"/>](https://www.npmjs.com/package/react-native-touch-filler)
+- GitHub: [Repo](https://github.com/OmarThinks/react-native-touch-filler) [<img src="https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/images/GitHub_Invertocat_Logo.svg?raw=true" height="15"/>](https://github.com/OmarThinks/react-native-touch-filler)
+- YouTube: [Video](https://www.youtube.com/watch?v=hmNTLzLNAwk) [<img src="https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/images/YouTube_icon.svg?raw=true" height="15"/>](https://www.youtube.com/watch?v=hmNTLzLNAwk)
 
 # Basic Example:
 
@@ -84,17 +86,17 @@ import type { TouchFillerProps } from "react-native-touch-filler";
 
 # 4) Examples GIFs:
 
-![gif1](./media/videos/1.gif)
+![gif1](https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/1.gif?raw=true)
 
-![gif1](./media/videos/2.gif)
+![gif2](https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/2.gif?raw=true)
 
-![gif1](./media/videos/3.gif)
+![gif3](https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/3.gif?raw=true)
 
-![gif1](./media/videos/4.gif)
+![gif4](https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/4.gif?raw=true)
 
-![gif1](./media/videos/5.gif)
+![gif5](https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/5.gif?raw=true)
 
-![gif1](./media/videos/6.gif)
+![gif6](https://github.com/OmarThinks/react-native-touch-filler/blob/master/media/videos/6.gif?raw=true)
 
 # Props:
 
@@ -211,11 +213,3 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 </table>
-
-# TODO:
-
-- Reduce packed size:
-  - Add media folder to .npmignore
-  - replace media link with github links
-  - test with `npm pack`
-  - publish
