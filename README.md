@@ -211,3 +211,11 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 </table>
+
+# TODO:
+
+- Reduce packed size:
+  - Add media folder to .npmignore
+  - replace media link with github links
+  - test with `npm pack`
+  - publish
