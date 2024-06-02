@@ -211,3 +211,10 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 </tr>
 
 </table>
+
+# Todos:
+
+- Document basic example with content and gif
+- conver header of Full Examples to include `<FullExamples />`
+- after or before to each example, add code, make it can be hidden
+- links, no-one cares, just convert them to a single line, and remove that big header
