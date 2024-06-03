@@ -214,7 +214,10 @@ Props of [Pressable](https://reactnative.dev/docs/pressable#props)
 
 # Todos:
 
-- Document basic example with content and gif
+- Document basic example with content and gif and onPress
 - conver header of Full Examples to include `<FullExamples />`
 - after or before to each example, add code, make it can be hidden
 - links, no-one cares, just convert them to a single line, and remove that big header
+- Add How to use
+- Add how it works
+- Add more gifs
